@@ -35,10 +35,12 @@ function AppShell({ children }: { children: React.ReactNode }) {
         </div>
       )}
 
-      <Navbar />
-      <main style={{ position: 'relative', zIndex: 1 }}>{children}</main>
-      <Footer />
-      <ScrollToTop />
+      <div style={{ position: 'relative', zIndex: 1 }}>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+        <ScrollToTop />
+      </div>
     </>
   );
 }

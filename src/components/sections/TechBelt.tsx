@@ -58,7 +58,7 @@ export default function TechBelt() {
       </div>
       <div className="tech-belt-tracks">
         <div className="tech-track">
-          <LogoLoop logos={ROW1.map(makeLogo)} speed={55} direction="left" logoHeight={50} gap={12} hoverSpeed={0} fadeOut fadeOutColor="var(--bg-1)" ariaLabel="Frontend stack" />
+          <LogoLoop logos={ROW1.map(makeLogo)} speed={55} direction="right" logoHeight={50} gap={12} hoverSpeed={0} fadeOut fadeOutColor="var(--bg-1)" ariaLabel="Frontend stack" />
         </div>
         <div className="tech-track">
           <LogoLoop logos={ROW2.map(makeLogo)} speed={45} direction="left" logoHeight={50} gap={12} hoverSpeed={0} fadeOut fadeOutColor="var(--bg-1)" ariaLabel="Backend stack" />
