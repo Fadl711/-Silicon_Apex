@@ -40,18 +40,16 @@ export default function HeroSection() {
             direction="top"
           />
 
-          <div className="hero-actions hero-actions-centered">
-            <Magnet padding={60} magnetStrength={3}>
+          <div className="hero-actions hero-actions-centered" style={{ gap: '32px', display: 'flex' }}>
+            <Magnet padding={30} magnetStrength={1}>
               <a href="#contact" className="btn btn-primary btn-lg">
                 {t('hero_cta1')}
               </a>
             </Magnet>
-            <Magnet padding={60} magnetStrength={3}>
-              <a href="#projects" className="btn btn-ghost btn-lg">
-                {t('hero_cta2')}
-                {dir === 'rtl' ? <ArrowLeft size={16} /> : <ArrowRight size={16} />}
-              </a>
-            </Magnet>
+            <a href="#projects" className="btn btn-ghost btn-lg">
+              {t('hero_cta2')}
+              {dir === 'rtl' ? <ArrowLeft size={16} /> : <ArrowRight size={16} />}
+            </a>
           </div>
 
         </div>

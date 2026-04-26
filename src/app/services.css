@@ -1,0 +1,143 @@
+/* =========================================
+   SERVICES — Bento Grid + SpotlightCards
+   ========================================= */
+
+/* Bento Grid Layout */
+.svc-bento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+@media (max-width: 900px) {
+  .svc-bento {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .svc-bento {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Large cards span 2 columns */
+.svc-large {
+  grid-column: span 2;
+}
+@media (max-width: 600px) {
+  .svc-large {
+    grid-column: span 1;
+  }
+}
+
+/* Individual card animation on scroll */
+.svc-card {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Inner content */
+.svc-inner {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Top row: icon + number */
+.svc-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+/* Icon container */
+.svc-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.svc-card:hover .svc-icon-box {
+  transform: scale(1.12);
+}
+.svc-large .svc-icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+}
+
+/* Large faded number */
+.svc-num {
+  font-family: var(--font-en);
+  font-size: 52px;
+  font-weight: 900;
+  color: var(--text-3);
+  opacity: 0.15;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Title */
+.svc-title {
+  font-family: var(--font-en);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-1);
+  margin-bottom: 10px;
+}
+html[lang="ar"] .svc-title {
+  font-family: var(--font-ar);
+  letter-spacing: 0;
+  font-size: 18px;
+}
+.svc-large .svc-title {
+  font-size: 22px;
+}
+html[lang="ar"] .svc-large .svc-title {
+  font-size: 20px;
+}
+
+/* Description */
+.svc-desc {
+  font-size: 14.5px;
+  color: var(--text-2);
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 20px;
+}
+.svc-large .svc-desc {
+  max-width: 480px;
+}
+
+/* Tags row */
+.svc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.svc-tag {
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  transition: transform 0.2s ease;
+}
+.svc-tag:hover {
+  transform: translateY(-1px);
+}
+
+/* Light mode adjustments for SpotlightCard */
+html.light .svc-card {
+  background: rgba(245, 245, 250, 0.9) !important;
+  border-color: rgba(0, 0, 0, 0.06) !important;
+}

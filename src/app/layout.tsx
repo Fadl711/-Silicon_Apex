@@ -3,6 +3,7 @@ import "./globals.css";
 import "./techbelt.css";
 import "./hero.css";
 import "./navbar.css";
+import "./services.css";
 import Providers from "./Providers";
 
 
