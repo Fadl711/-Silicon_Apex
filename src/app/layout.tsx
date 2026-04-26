@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./techbelt.css";
 import Providers from "./Providers";
+
 
 export const metadata: Metadata = {
   title: "Silicon Apex — هندسة برمجية من الجيل القادم",

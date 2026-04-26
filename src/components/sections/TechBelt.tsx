@@ -1,52 +1,107 @@
 "use client";
 
-import React from 'react';
+import React, { useRef } from 'react';
+import { useLanguage } from '@/providers/LanguageProvider';
 import LogoLoop from '@/components/ui/LogoLoop';
 import {
-  Code2, Layers, Smartphone, Server, Database, Cloud, Zap, Box, GitBranch, Code, Activity
-} from 'lucide-react';
+  ReactLogo, NextjsLogo, FlutterLogo, NodejsLogo, LaravelLogo,
+  PostgresLogo, MongoLogo, AWSLogo, FirebaseLogo, TypeScriptLogo,
+  DockerLogo, RedisLogo, PythonLogo, GraphQLLogo,
+  TailwindLogo, FigmaLogo, KubernetesLogo, VueLogo
+} from '@/components/ui/TechLogos';
 
-const techItems = [
-  { icon: <Code2 size={15} color="#4361EE" />, name: 'React' },
-  { icon: <Layers size={15} color="#00B4D8" />, name: 'Next.js' },
-  { icon: <Smartphone size={15} color="#027DFD" />, name: 'Flutter' },
-  { icon: <Server size={15} color="#6DB33F" />, name: 'Node.js' },
-  { icon: <Database size={15} color="#FF7950" />, name: 'Laravel' },
-  { icon: <Database size={15} color="#336791" />, name: 'PostgreSQL' },
-  { icon: <Server size={15} color="#47A248" />, name: 'MongoDB' },
-  { icon: <Cloud size={15} color="#FF9900" />, name: 'AWS' },
-  { icon: <Cloud size={15} color="#4285F4" />, name: 'Firebase' },
-  { icon: <Zap size={15} color="#3178C6" />, name: 'TypeScript' },
-  { icon: <Box size={15} color="#2496ED" />, name: 'Docker' },
-  { icon: <GitBranch size={15} color="#F05032" />, name: 'Redis' },
-  { icon: <Code size={15} color="#3776AB" />, name: 'Python' },
-  { icon: <Activity size={15} color="#E535AB" />, name: 'GraphQL' },
+interface TechItem {
+  Logo: () => React.JSX.Element;
+  name: string;
+  color: string;
+}
+
+const ROW1: TechItem[] = [
+  { Logo: ReactLogo, name: 'React', color: '#61DAFB' },
+  { Logo: NextjsLogo, name: 'Next.js', color: '#ffffff' },
+  { Logo: TypeScriptLogo, name: 'TypeScript', color: '#3178C6' },
+  { Logo: TailwindLogo, name: 'Tailwind CSS', color: '#38BDF8' },
+  { Logo: VueLogo, name: 'Vue.js', color: '#42B883' },
+  { Logo: FigmaLogo, name: 'Figma', color: '#F24E1E' },
+  { Logo: GraphQLLogo, name: 'GraphQL', color: '#E10098' },
 ];
 
-const logos = techItems.map(item => ({
-  node: (
-    <div className="tech-item">
-      {item.icon}
-      {item.name}
-    </div>
-  ),
-  title: item.name,
-}));
+const ROW2: TechItem[] = [
+  { Logo: NodejsLogo, name: 'Node.js', color: '#539E43' },
+  { Logo: LaravelLogo, name: 'Laravel', color: '#F05340' },
+  { Logo: PythonLogo, name: 'Python', color: '#3776AB' },
+  { Logo: FlutterLogo, name: 'Flutter', color: '#54C5F8' },
+  { Logo: PostgresLogo, name: 'PostgreSQL', color: '#336791' },
+  { Logo: MongoLogo, name: 'MongoDB', color: '#47A248' },
+  { Logo: RedisLogo, name: 'Redis', color: '#E74C3C' },
+  { Logo: AWSLogo, name: 'AWS', color: '#FF9900' },
+  { Logo: FirebaseLogo, name: 'Firebase', color: '#FFCA28' },
+  { Logo: DockerLogo, name: 'Docker', color: '#2496ED' },
+  { Logo: KubernetesLogo, name: 'Kubernetes', color: '#326CE5' },
+];
+
+function makeLogo({ Logo, name, color }: TechItem) {
+  return {
+    node: (
+      <div className="tech-logo-pill">
+        <div className="tech-logo-icon">
+          <Logo />
+        </div>
+        <span className="tech-logo-name" style={{ color }}>
+          {name}
+        </span>
+      </div>
+    ),
+    title: name,
+  };
+}
 
 export default function TechBelt() {
+  const { t } = useLanguage();
+
+  const row1Logos = ROW1.map(makeLogo);
+  const row2Logos = ROW2.map(makeLogo);
+
   return (
-    <div className="tech-belt-wrapper">
-      <LogoLoop
-        logos={logos}
-        speed={60}
-        direction="left"
-        logoHeight={40}
-        gap={16}
-        hoverSpeed={0}
-        fadeOut
-        fadeOutColor="var(--bg-0)"
-        ariaLabel="Technologies we use"
-      />
-    </div>
+    <section className="tech-belt-section">
+      <div className="container">
+        <div className="tech-belt-header">
+          <div className="eyebrow">{t('tech_belt_eyebrow')}</div>
+          <h3 className="tech-belt-title">{t('tech_belt_title')}</h3>
+        </div>
+      </div>
+
+      <div className="tech-belt-tracks">
+        {/* Row 1 — Left to Right */}
+        <div className="tech-track">
+          <LogoLoop
+            logos={row1Logos}
+            speed={55}
+            direction="left"
+            logoHeight={50}
+            gap={12}
+            hoverSpeed={0}
+            fadeOut
+            fadeOutColor="var(--bg-0)"
+            ariaLabel="Frontend technologies"
+          />
+        </div>
+
+        {/* Row 2 — Right to Left */}
+        <div className="tech-track">
+          <LogoLoop
+            logos={row2Logos}
+            speed={55}
+            direction="right"
+            logoHeight={50}
+            gap={12}
+            hoverSpeed={0}
+            fadeOut
+            fadeOutColor="var(--bg-0)"
+            ariaLabel="Backend and infrastructure"
+          />
+        </div>
+      </div>
+    </section>
   );
 }

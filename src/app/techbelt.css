@@ -1,0 +1,70 @@
+/* =========================================
+   TECH BELT — Two-row logo belt (NEW)
+   Silicon Apex — Professional Tech Logos
+   ========================================= */
+.tech-belt-section {
+  padding: 80px 0 64px;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-1);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.tech-belt-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.tech-belt-title {
+  font-family: var(--font-en);
+  font-size: clamp(22px, 2.5vw, 30px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-1);
+  margin-top: 10px;
+}
+html[lang="ar"] .tech-belt-title { font-family: var(--font-ar); letter-spacing: 0; }
+
+.tech-belt-tracks {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.tech-track { width: 100%; }
+
+/* ── Logo Pill Card ─────────────────────── */
+.tech-logo-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg-2);
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+.tech-logo-pill:hover {
+  border-color: var(--border-md);
+  background: var(--bg-3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+}
+.tech-logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+.tech-logo-icon svg {
+  width: 28px;
+  height: 28px;
+}
+.tech-logo-name {
+  font-family: 'DM Sans', 'Bricolage Grotesque', sans-serif;
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
