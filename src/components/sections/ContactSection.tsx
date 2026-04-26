@@ -59,7 +59,7 @@ export default function ContactSection() {
       }
       const div = document.createElement('div');
       div.innerHTML = lines[i][lang] || lines[i].en;
-      block.appendChild(div);
+      if (block) block.appendChild(div);
       i++;
       timeoutId = setTimeout(typeLine, 280);
     }
