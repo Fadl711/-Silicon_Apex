@@ -1,190 +1,188 @@
-// Professional SVG Tech Brand Logos
-// Modern, Linear-style, crisp and high-quality
-
+// Official-accurate SVG brand logos for Silicon Apex tech belt
 export const ReactLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    <circle cx="50" cy="50" r="8.5" fill="#61DAFB"/>
-    <ellipse cx="50" cy="50" rx="47" ry="18" fill="none" stroke="#61DAFB" strokeWidth="3.5"/>
-    <ellipse cx="50" cy="50" rx="47" ry="18" fill="none" stroke="#61DAFB" strokeWidth="3.5" transform="rotate(60 50 50)"/>
-    <ellipse cx="50" cy="50" rx="47" ry="18" fill="none" stroke="#61DAFB" strokeWidth="3.5" transform="rotate(120 50 50)"/>
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    <circle cx="50" cy="50" r="8" fill="#61DAFB"/>
+    <ellipse cx="50" cy="50" rx="46" ry="17" fill="none" stroke="#61DAFB" strokeWidth="3.5"/>
+    <ellipse cx="50" cy="50" rx="46" ry="17" fill="none" stroke="#61DAFB" strokeWidth="3.5" transform="rotate(60 50 50)"/>
+    <ellipse cx="50" cy="50" rx="46" ry="17" fill="none" stroke="#61DAFB" strokeWidth="3.5" transform="rotate(120 50 50)"/>
   </svg>
 );
 
 export const NextjsLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    <circle cx="50" cy="50" r="46" fill="#000" stroke="#fff" strokeWidth="1"/>
-    <text x="50" y="67" textAnchor="middle" fontSize="52" fontWeight="900" fontFamily="Arial,sans-serif" fill="white">N</text>
-    <line x1="62" y1="28" x2="84" y2="72" stroke="white" strokeWidth="5" strokeLinecap="round"/>
-  </svg>
-);
-
-export const FlutterLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    <polygon points="50,8 18,42 32,56 64,24" fill="#54C5F8"/>
-    <polygon points="32,56 50,74 64,60 46,42" fill="#01579B"/>
-    <polygon points="50,74 18,74 32,60 46,74" fill="#29B6F6"/>
-    <polygon points="50,92 18,74 32,88 64,88" fill="#01579B" opacity="0.7"/>
-  </svg>
-);
-
-export const NodejsLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    <polygon points="50,4 94,28 94,72 50,96 6,72 6,28" fill="none" stroke="#539E43" strokeWidth="4"/>
-    <text x="50" y="62" textAnchor="middle" fontSize="26" fontWeight="700" fontFamily="Arial,sans-serif" fill="#539E43">node</text>
-  </svg>
-);
-
-export const LaravelLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    <path d="M 94 22 C 94 22 58 10 50 8 C 42 6 8 22 8 22 L 8 62 C 8 62 8 75 20 82 L 50 96 L 80 82 C 92 75 92 62 92 62 Z" fill="#F05340"/>
-    <text x="50" y="62" textAnchor="middle" fontSize="38" fontWeight="900" fontFamily="Georgia,serif" fill="white" fontStyle="italic">L</text>
-  </svg>
-);
-
-export const PostgresLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    <ellipse cx="46" cy="38" rx="30" ry="28" fill="none" stroke="#336791" strokeWidth="5"/>
-    <ellipse cx="46" cy="38" rx="30" ry="28" fill="#336791" opacity="0.15"/>
-    <line x1="16" y1="34" x2="76" y2="34" stroke="#336791" strokeWidth="4"/>
-    <line x1="16" y1="44" x2="76" y2="44" stroke="#336791" strokeWidth="4"/>
-    <line x1="63" y1="10" x2="75" y2="20" stroke="#336791" strokeWidth="4"/>
-    <path d="M 46 64 Q 46 88 56 90" fill="none" stroke="#336791" strokeWidth="4"/>
-    <path d="M 46 64 Q 50 80 42 84" fill="none" stroke="#336791" strokeWidth="4"/>
-    <ellipse cx="72" cy="28" rx="10" ry="8" fill="#336791" opacity="0.6"/>
-  </svg>
-);
-
-export const MongoLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    <path d="M50 6 C50 6 20 30 20 58 C20 78 34 92 50 96 C66 92 80 78 80 58 C80 30 50 6 50 6Z" fill="#47A248"/>
-    <line x1="50" y1="30" x2="50" y2="96" stroke="#fff" strokeWidth="4" strokeLinecap="round" opacity="0.7"/>
-    <ellipse cx="50" cy="29" rx="7" ry="10" fill="#fff" opacity="0.9"/>
-  </svg>
-);
-
-export const AWSLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    <text x="50" y="42" textAnchor="middle" fontSize="22" fontWeight="900" fontFamily="Arial,sans-serif" fill="#FF9900">AWS</text>
-    <path d="M18 58 Q50 74 82 58" fill="none" stroke="#FF9900" strokeWidth="4" strokeLinecap="round"/>
-    <path d="M82 58 L74 52" fill="none" stroke="#FF9900" strokeWidth="4" strokeLinecap="round"/>
-    <path d="M82 58 L78 66" fill="none" stroke="#FF9900" strokeWidth="4" strokeLinecap="round"/>
-    <path d="M18 58 L26 52" fill="none" stroke="#FF9900" strokeWidth="4" strokeLinecap="round"/>
-    <path d="M18 58 L22 66" fill="none" stroke="#FF9900" strokeWidth="4" strokeLinecap="round"/>
-  </svg>
-);
-
-export const FirebaseLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    <path d="M22 74 L36 20 L54 52 Z" fill="#F57C00"/>
-    <path d="M54 52 L62 32 L78 74 Z" fill="#FFCA28"/>
-    <path d="M22 74 L54 52 L78 74 L50 90 Z" fill="#FFA000"/>
-    <path d="M62 32 L54 10 L54 52 Z" fill="#F57C00" opacity="0.7"/>
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    <circle cx="50" cy="50" r="47" fill="#000"/>
+    <path d="M30 68V30h8l28 34V30h8v38h-8L38 34v34z" fill="white"/>
   </svg>
 );
 
 export const TypeScriptLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    <rect x="4" y="4" width="92" height="92" rx="10" fill="#3178C6"/>
-    <text x="50" y="66" textAnchor="middle" fontSize="52" fontWeight="900" fontFamily="Arial,sans-serif" fill="white">TS</text>
-  </svg>
-);
-
-export const DockerLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    {/* Whale body */}
-    <path d="M10 58 Q10 76 28 76 L72 76 Q90 76 90 60 Q90 44 72 44 Q70 32 58 32 Q46 32 44 44 Q36 44 32 52 Q20 52 10 58Z" fill="#2496ED"/>
-    {/* Containers */}
-    <rect x="22" y="44" width="12" height="10" rx="2" fill="white" opacity="0.85"/>
-    <rect x="36" y="44" width="12" height="10" rx="2" fill="white" opacity="0.85"/>
-    <rect x="50" y="44" width="12" height="10" rx="2" fill="white" opacity="0.85"/>
-    <rect x="22" y="32" width="12" height="10" rx="2" fill="white" opacity="0.85"/>
-    <rect x="36" y="32" width="12" height="10" rx="2" fill="white" opacity="0.85"/>
-    {/* Eye */}
-    <circle cx="78" cy="56" r="4" fill="white"/>
-    <circle cx="79" cy="55" r="1.5" fill="#2496ED"/>
-    {/* Water drops */}
-    <circle cx="30" cy="84" r="3" fill="#2496ED" opacity="0.5"/>
-    <circle cx="50" cy="88" r="3" fill="#2496ED" opacity="0.5"/>
-    <circle cx="70" cy="84" r="3" fill="#2496ED" opacity="0.5"/>
-  </svg>
-);
-
-export const RedisLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    <ellipse cx="50" cy="62" rx="44" ry="18" fill="#8B1A1A"/>
-    <ellipse cx="50" cy="54" rx="44" ry="18" fill="#C0392B"/>
-    <ellipse cx="50" cy="46" rx="44" ry="18" fill="#E74C3C"/>
-    <ellipse cx="50" cy="38" rx="44" ry="18" fill="#C0392B"/>
-    <polygon points="26,30 50,20 74,30 50,40" fill="#E74C3C"/>
-    <polygon points="26,30 50,20 50,16 26,26" fill="#922B21"/>
-    <polygon points="74,30 50,20 50,16 74,26" fill="#C0392B"/>
-  </svg>
-);
-
-export const PythonLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    <path d="M50 6 C26 6 28 16 28 26 L28 34 L54 34 L54 38 L20 38 C20 38 6 36 6 62 C6 88 18 90 26 90 L34 90 L34 80 C34 80 32 68 46 68 L62 68 C62 68 74 70 74 58 L74 22 C74 22 76 6 50 6Z" fill="#3776AB"/>
-    <path d="M50 94 C74 94 72 84 72 74 L72 66 L46 66 L46 62 L80 62 C80 62 94 64 94 38 C94 12 82 10 74 10 L66 10 L66 20 C66 20 68 32 54 32 L38 32 C38 32 26 30 26 42 L26 78 C26 78 24 94 50 94Z" fill="#FFC331"/>
-    <circle cx="38" cy="22" r="5" fill="white" opacity="0.9"/>
-    <circle cx="62" cy="78" r="5" fill="white" opacity="0.9"/>
-  </svg>
-);
-
-export const GraphQLLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    <circle cx="50" cy="10" r="7" fill="#E10098"/>
-    <circle cx="50" cy="90" r="7" fill="#E10098"/>
-    <circle cx="13" cy="30" r="7" fill="#E10098"/>
-    <circle cx="87" cy="30" r="7" fill="#E10098"/>
-    <circle cx="13" cy="70" r="7" fill="#E10098"/>
-    <circle cx="87" cy="70" r="7" fill="#E10098"/>
-    <line x1="50" y1="10" x2="13" y2="30" stroke="#E10098" strokeWidth="3"/>
-    <line x1="50" y1="10" x2="87" y2="30" stroke="#E10098" strokeWidth="3"/>
-    <line x1="13" y1="30" x2="13" y2="70" stroke="#E10098" strokeWidth="3"/>
-    <line x1="87" y1="30" x2="87" y2="70" stroke="#E10098" strokeWidth="3"/>
-    <line x1="13" y1="70" x2="50" y2="90" stroke="#E10098" strokeWidth="3"/>
-    <line x1="87" y1="70" x2="50" y2="90" stroke="#E10098" strokeWidth="3"/>
-    <line x1="50" y1="10" x2="50" y2="90" stroke="#E10098" strokeWidth="3" opacity="0.4"/>
-    <line x1="13" y1="30" x2="87" y2="70" stroke="#E10098" strokeWidth="3" opacity="0.4"/>
-    <line x1="87" y1="30" x2="13" y2="70" stroke="#E10098" strokeWidth="3" opacity="0.4"/>
-    <circle cx="50" cy="50" r="14" fill="none" stroke="#E10098" strokeWidth="3"/>
-  </svg>
-);
-
-export const VueLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    <polygon points="50,90 6,14 22,14 50,62 78,14 94,14" fill="#42B883"/>
-    <polygon points="50,72 26,28 38,28 50,50 62,28 74,28" fill="#35495E"/>
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    <rect x="2" y="2" width="96" height="96" rx="8" fill="#3178C6"/>
+    <path d="M56 56v-8H22v8h12v34h10V56z" fill="white"/>
+    <path d="M62 90V68c2 3 6 5 11 5 8 0 14-5 14-14 0-8-5-13-14-13-5 0-9 2-11 5v-4h-9v43z M62 59c2-3 5-5 9-5 5 0 8 3 8 8s-3 8-8 8c-4 0-7-2-9-5z" fill="white"/>
   </svg>
 );
 
 export const TailwindLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    <path d="M50 18C34 18 24 26 20 42C26 34 33 31 42 33C47.4 34.3 51.2 38.2 55.4 42.5C62.3 49.6 70.3 58 90 58C106 58 116 50 120 34C114 42 107 45 98 43C92.6 41.7 88.8 37.8 84.6 33.5C77.7 26.4 69.7 18 50 18Z" fill="#38BDF8"/>
-    <path d="M20 58C4 58 -6 66 -10 82C-4 74 3 71 12 73C17.4 74.3 21.2 78.2 25.4 82.5C32.3 89.6 40.3 98 60 98C76 98 86 90 90 74C84 82 77 85 68 83C62.6 81.7 58.8 77.8 54.6 73.5C47.7 66.4 39.7 58 20 58Z" fill="#38BDF8"/>
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    <path d="M25 37.5C28 25 35 18.75 46.25 18.75c17.5 0 19.375 13.125 28.125 15.313 5.75 1.437 10.75-0.563 15-6.063C86.375 40.625 79.375 46.875 68.125 46.875c-17.5 0-19.375-13.125-28.125-15.313C34 30.125 29 32.125 25 37.5z" fill="#38BDF8"/>
+    <path d="M6.25 62.5C9.25 50 16.25 43.75 27.5 43.75c17.5 0 19.375 13.125 28.125 15.313 5.75 1.437 10.75-0.563 15-6.063C67.625 65.625 60.625 71.875 49.375 71.875c-17.5 0-19.375-13.125-28.125-15.313C15.5 55.125 10.5 57.125 6.25 62.5z" fill="#38BDF8"/>
+  </svg>
+);
+
+export const VueLogo = () => (
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    <polygon points="50,92 4,14 22,14 50,64 78,14 96,14" fill="#42B883"/>
+    <polygon points="50,72 26,30 38,30 50,52 62,30 74,30" fill="#35495E"/>
   </svg>
 );
 
 export const FigmaLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-    <rect x="20" y="6" width="28" height="30" rx="14" fill="#F24E1E"/>
-    <rect x="52" y="6" width="28" height="30" rx="14" fill="#FF7262"/>
-    <rect x="20" y="36" width="28" height="28" rx="0" fill="#A259FF"/>
-    <circle cx="66" cy="50" r="14" fill="#1ABCFE"/>
-    <rect x="20" y="64" width="28" height="30" rx="0 0 14 14" fill="#0ACF83"/>
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    <rect x="18" y="4" width="30" height="32" rx="15" fill="#F24E1E"/>
+    <rect x="52" y="4" width="30" height="32" rx="15" fill="#FF7262"/>
+    <rect x="18" y="36" width="30" height="28" fill="#A259FF"/>
+    <circle cx="67" cy="50" r="15" fill="#1ABCFE"/>
+    <rect x="18" y="64" width="30" height="32" rx="0 0 15 15" fill="#0ACF83"/>
+  </svg>
+);
+
+export const NodejsLogo = () => (
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    <path d="M50 4L8 28v44l42 24 42-24V28z" fill="#339933"/>
+    <path d="M50 4L8 28v44l42 24 42-24V28z" fill="none" stroke="#fff" strokeWidth="2" opacity="0.2"/>
+    <text x="50" y="57" textAnchor="middle" fontSize="16" fontWeight="700" fontFamily="Arial,sans-serif" fill="white">node.js</text>
+  </svg>
+);
+
+export const LaravelLogo = () => (
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    <path d="M96 30L63 4 24 18 10 52l20 44h30l16-20 24-28z" fill="#FF2D20"/>
+    <path d="M60 20L40 28v30l20 10 20-10V28z" fill="white" opacity="0.15"/>
+    <text x="50" y="62" textAnchor="middle" fontSize="38" fontWeight="900" fontFamily="Georgia,serif" fill="white" fontStyle="italic">L</text>
+  </svg>
+);
+
+export const PythonLogo = () => (
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    <path d="M50 8c-12 0-22 2-22 16v10h22v4H20C8 38 6 46 6 54s3 16 14 16h8v-12c0-8 7-14 22-14s22 6 22 14v12h8c11 0 14-8 14-16s-2-16-14-16H56v-4h22V24C78 10 62 8 50 8z" fill="#3776AB"/>
+    <path d="M50 92c12 0 22-2 22-16V66H50v-4h30c12 0 14-8 14-16s-3-16-14-16h-8v12c0 8-7 14-22 14s-22-6-22-14V32H20c-11 0-14 8-14 16s2 16 14 16h24v4H22v10C22 90 38 92 50 92z" fill="#FFD43B"/>
+    <circle cx="38" cy="26" r="4" fill="white"/>
+    <circle cx="62" cy="74" r="4" fill="white"/>
+  </svg>
+);
+
+export const FlutterLogo = () => (
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    <polygon points="14,50 46,12 62,12 30,50" fill="#54C5F8"/>
+    <polygon points="30,50 62,12 78,12 46,50" fill="#01579B"/>
+    <polygon points="30,50 14,68 30,68 46,50" fill="#29B6F6"/>
+    <polygon points="46,50 30,68 46,68 62,88 78,72" fill="#01579B"/>
+    <polygon points="46,68 62,88 78,88 62,68" fill="#29B6F6" opacity="0.6"/>
+  </svg>
+);
+
+export const PostgresLogo = () => (
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    <ellipse cx="44" cy="36" rx="30" ry="26" fill="#336791"/>
+    <ellipse cx="44" cy="36" rx="30" ry="26" fill="none" stroke="#fff" strokeWidth="2" opacity="0.3"/>
+    <line x1="14" y1="32" x2="74" y2="32" stroke="white" strokeWidth="3" opacity="0.5"/>
+    <line x1="14" y1="42" x2="74" y2="42" stroke="white" strokeWidth="3" opacity="0.5"/>
+    <path d="M44 60 Q44 82 54 86" fill="none" stroke="#336791" strokeWidth="4"/>
+    <path d="M44 60 Q48 76 40 82" fill="none" stroke="#336791" strokeWidth="4"/>
+    <ellipse cx="68" cy="26" rx="10" ry="8" fill="#336791" stroke="#fff" strokeWidth="1.5" opacity="0.8"/>
+    <line x1="62" y1="8" x2="72" y2="18" stroke="#336791" strokeWidth="3"/>
+  </svg>
+);
+
+export const MongoLogo = () => (
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    <path d="M50 6C30 6 18 26 18 46c0 24 20 44 32 48 12-4 32-24 32-48C82 26 70 6 50 6z" fill="#47A248"/>
+    <line x1="50" y1="28" x2="50" y2="94" stroke="white" strokeWidth="5" strokeLinecap="round" opacity="0.7"/>
+    <ellipse cx="50" cy="27" rx="8" ry="11" fill="white" opacity="0.9"/>
+  </svg>
+);
+
+export const AWSLogo = () => (
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    <text x="50" y="44" textAnchor="middle" fontSize="24" fontWeight="900" fontFamily="Arial Black,sans-serif" fill="#FF9900">AWS</text>
+    <path d="M16 62 Q50 80 84 62" fill="none" stroke="#FF9900" strokeWidth="4.5" strokeLinecap="round"/>
+    <path d="M84 62 L76 55" stroke="#FF9900" strokeWidth="4.5" strokeLinecap="round"/>
+    <path d="M84 62 L80 70" stroke="#FF9900" strokeWidth="4.5" strokeLinecap="round"/>
+    <path d="M16 62 L24 55" stroke="#FF9900" strokeWidth="4.5" strokeLinecap="round"/>
+    <path d="M16 62 L20 70" stroke="#FF9900" strokeWidth="4.5" strokeLinecap="round"/>
+  </svg>
+);
+
+export const FirebaseLogo = () => (
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    <path d="M20 76L36 18l18 34z" fill="#FFA000"/>
+    <path d="M54 52L62 30 80 76z" fill="#F57C00"/>
+    <path d="M20 76L54 52 80 76 50 92z" fill="#FFCA28"/>
+    <path d="M62 30L54 10l-0.5 42z" fill="#F57C00" opacity="0.8"/>
+  </svg>
+);
+
+export const DockerLogo = () => (
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    <rect x="18" y="38" width="14" height="12" rx="2" fill="#2496ED"/>
+    <rect x="34" y="38" width="14" height="12" rx="2" fill="#2496ED"/>
+    <rect x="50" y="38" width="14" height="12" rx="2" fill="#2496ED"/>
+    <rect x="18" y="24" width="14" height="12" rx="2" fill="#2496ED"/>
+    <rect x="34" y="24" width="14" height="12" rx="2" fill="#2496ED"/>
+    <path d="M8 52c0 14 8 22 22 22h32c16 0 28-8 30-22C84 40 76 50 66 50H8z" fill="#2496ED"/>
+    <circle cx="80" cy="40" r="6" fill="#2496ED"/>
+    <line x1="80" y1="28" x2="80" y2="34" stroke="#2496ED" strokeWidth="3"/>
+    <circle cx="80" cy="40" r="3" fill="white"/>
+  </svg>
+);
+
+export const RedisLogo = () => (
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    <ellipse cx="50" cy="65" rx="44" ry="16" fill="#8B1A1A"/>
+    <ellipse cx="50" cy="56" rx="44" ry="16" fill="#C0392B"/>
+    <ellipse cx="50" cy="47" rx="44" ry="16" fill="#E74C3C"/>
+    <ellipse cx="50" cy="38" rx="44" ry="16" fill="#C0392B"/>
+    <ellipse cx="50" cy="30" rx="44" ry="16" fill="#FF6B6B"/>
+    <text x="50" y="35" textAnchor="middle" fontSize="14" fontWeight="800" fontFamily="Arial,sans-serif" fill="white">REDIS</text>
+  </svg>
+);
+
+export const GraphQLLogo = () => (
+  <svg viewBox="0 0 100 100" width="26" height="26">
+    {[0,60,120,180,240,300].map((deg, i) => {
+      const r = 42;
+      const x = 50 + r * Math.cos((deg - 90) * Math.PI / 180);
+      const y = 50 + r * Math.sin((deg - 90) * Math.PI / 180);
+      return <circle key={i} cx={x} cy={y} r="6" fill="#E10098"/>;
+    })}
+    {[[0,120],[60,180],[120,240],[180,300],[240,0],[300,60]].map(([a,b], i) => {
+      const r = 42;
+      const x1 = 50 + r * Math.cos((a - 90) * Math.PI / 180);
+      const y1 = 50 + r * Math.sin((a - 90) * Math.PI / 180);
+      const x2 = 50 + r * Math.cos((b - 90) * Math.PI / 180);
+      const y2 = 50 + r * Math.sin((b - 90) * Math.PI / 180);
+      return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#E10098" strokeWidth="2.5"/>;
+    })}
+    <circle cx="50" cy="50" r="12" fill="none" stroke="#E10098" strokeWidth="2.5"/>
   </svg>
 );
 
 export const KubernetesLogo = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+  <svg viewBox="0 0 100 100" width="26" height="26">
     <circle cx="50" cy="50" r="46" fill="none" stroke="#326CE5" strokeWidth="4"/>
-    <polygon points="50,14 57,34 50,30 43,34" fill="#326CE5"/>
-    <polygon points="50,86 57,66 50,70 43,66" fill="#326CE5" transform="rotate(180 50 50)"/>
-    <polygon points="86,50 66,43 70,50 66,57" fill="#326CE5" transform="rotate(90 50 50)"/>
-    <polygon points="14,50 34,43 30,50 34,57" fill="#326CE5" transform="rotate(270 50 50)"/>
-    <polygon points="50,50 72,28 68,24 50,44" fill="#326CE5" opacity="0.6"/>
-    <polygon points="50,50 28,72 32,76 50,56" fill="#326CE5" opacity="0.6"/>
-    <circle cx="50" cy="50" r="12" fill="#326CE5"/>
+    <circle cx="50" cy="50" r="46" fill="#326CE5" opacity="0.08"/>
+    {[0,72,144,216,288].map((deg, i) => {
+      const r1 = 20, r2 = 42;
+      const rad = (deg - 90) * Math.PI / 180;
+      return (
+        <g key={i}>
+          <line x1={50 + r1 * Math.cos(rad)} y1={50 + r1 * Math.sin(rad)} x2={50 + r2 * Math.cos(rad)} y2={50 + r2 * Math.sin(rad)} stroke="#326CE5" strokeWidth="3.5"/>
+          <circle cx={50 + r2 * Math.cos(rad)} cy={50 + r2 * Math.sin(rad)} r="5" fill="#326CE5"/>
+        </g>
+      );
+    })}
+    <circle cx="50" cy="50" r="14" fill="#326CE5"/>
     <circle cx="50" cy="50" r="6" fill="white"/>
   </svg>
 );

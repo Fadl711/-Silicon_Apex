@@ -1,0 +1,103 @@
+/* =========================================
+   HERO — Centered layout + Pro scroll
+   ========================================= */
+
+/* Center the hero content */
+.hero-centered {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+/* Slightly smaller heading for hero */
+.hero-heading {
+  font-size: clamp(38px, 5.5vw, 72px) !important;
+  line-height: 1.08 !important;
+  margin-bottom: 28px;
+}
+html[lang="ar"] .hero-heading {
+  font-size: clamp(42px, 6vw, 80px) !important;
+  line-height: 1.15 !important;
+}
+
+/* ShinyText inside h1 inherits size */
+.hero-shiny {
+  display: inline;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+/* Centered subtitle */
+.hero-sub-centered {
+  font-size: clamp(15px, 1.6vw, 18px) !important;
+  max-width: 540px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+html[lang="ar"] .hero-sub-centered {
+  font-family: var(--font-ar);
+}
+
+/* Centered CTA buttons */
+.hero-actions-centered {
+  justify-content: center;
+}
+
+/* ── Professional scroll indicator ─────── */
+.hero-scroll-pro {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  animation: fadeIn 1s 1.2s ease both;
+  opacity: 0;
+}
+.hero-scroll-text {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, var(--accent), #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-scroll-track {
+  width: 2px;
+  height: 44px;
+  border-radius: 2px;
+  background: linear-gradient(
+    to bottom,
+    var(--accent),
+    rgba(167, 139, 250, 0.3),
+    transparent
+  );
+  position: relative;
+  overflow: hidden;
+}
+.hero-scroll-dot {
+  width: 4px;
+  height: 10px;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, #fff, var(--accent));
+  position: absolute;
+  left: -1px;
+  top: 0;
+  animation: scrollDotAnim 1.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  box-shadow: 0 0 6px rgba(67, 97, 238, 0.8);
+}
+@keyframes scrollDotAnim {
+  0%   { top: -10px; opacity: 0; }
+  20%  { opacity: 1; }
+  80%  { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}

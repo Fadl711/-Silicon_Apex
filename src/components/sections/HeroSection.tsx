@@ -8,28 +8,25 @@ import BlurText from '@/components/ui/BlurText';
 import Magnet from '@/components/ui/Magnet';
 
 export default function HeroSection() {
-  const { lang, t, dir } = useLanguage();
+  const { t, dir } = useLanguage();
 
   return (
     <section className="hero" id="hero">
       <div className="hero-glow" />
       <div className="hero-grid" />
-      <div className="container">
-        <div className="hero-content">
-          <div className="hero-eyebrow">
-            <span className="dot" />
-            <span>{t('hero_badge')}</span>
-          </div>
 
-          <h1 className="heading-xl">
+      <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+        {/* ── centered hero content ── */}
+        <div className="hero-content hero-centered">
+
+          <h1 className="heading-xl hero-heading">
             <span>{t('hero_h1_1')}</span>{' '}
             <ShinyText
               text={t('hero_h1_2')}
               color="var(--accent)"
               shineColor="#a78bfa"
               speed={3}
-              className="inline-block"
-              style={{ color: 'var(--accent)' } as never}
+              className="hero-shiny"
             />
             <br />
             <span>{t('hero_h1_3')}</span>
@@ -37,13 +34,13 @@ export default function HeroSection() {
 
           <BlurText
             text={t('hero_sub')}
-            className="hero-sub"
-            delay={80}
+            className="hero-sub hero-sub-centered"
+            delay={70}
             animateBy="words"
             direction="top"
           />
 
-          <div className="hero-actions">
+          <div className="hero-actions hero-actions-centered">
             <Magnet padding={60} magnetStrength={3}>
               <a href="#contact" className="btn btn-primary btn-lg">
                 {t('hero_cta1')}
@@ -56,11 +53,16 @@ export default function HeroSection() {
               </a>
             </Magnet>
           </div>
+
         </div>
       </div>
-      <div className="hero-scroll" id="hero-scroll">
-        <span>{t('hero_scroll')}</span>
-        <div className="hero-scroll-line" />
+
+      {/* ── Professional scroll indicator ── */}
+      <div className="hero-scroll-pro" id="hero-scroll">
+        <span className="hero-scroll-text">{t('hero_scroll')}</span>
+        <div className="hero-scroll-track">
+          <div className="hero-scroll-dot" />
+        </div>
       </div>
     </section>
   );
